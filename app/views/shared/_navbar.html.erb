@@ -1,6 +1,14 @@
 <div class="container">
-  <%= render "shared/navbar" %>
-<h1>Blog</h1>
+  <div class="navbar">
+    <%= image_tag "logo.png", class: "logo" %>
+    <nav>
+      <ul class="mt-3" id="menuList">
+        <li><%= link_to "Posts", posts_path %></li>
+        <li><%= link_to "About", posts_path %></li>
+      </ul>
+    </nav>
+    <img src="/images/menu.svg" class= "menu-icon" onclick="togglemenu()">
+  </div>
 </div>
 <script>
 
