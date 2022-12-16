@@ -1,5 +1,5 @@
 <div class="container">
-  <h1 class="mb-5 mt-5">Edit your Blog</h1>
+  <h1 class="mb-5 mt-5">Manage your Blog</h1>
       <%= render "shared/form" %>
       <%= link_to "Delete this blog", post_path(@post), class: "btn btn-link mb-5 row row-cols-auto", data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete this post?" } %>
 </div>
