@@ -1,11 +1,29 @@
 .music-card{
   border-radius: 5px;
 }
+.music-card img{
+  height: 220px;
+  object-fit: cover;
+  border-radius: 4px 4px 0px 0px;
+}
+
 
 .web-card{
   border-radius: 5px;
 }
 
+.web-card img{
+  height: 220px;
+  object-fit: cover;
+  border-radius: 4px 4px 0px 0px;
+}
+
 .photography-card{
   border-radius: 5px;
+}
+
+.photography-card img{
+  height: 220px;
+  object-fit: cover;
+  border-radius: 4px 4px 0px 0px;
 }
