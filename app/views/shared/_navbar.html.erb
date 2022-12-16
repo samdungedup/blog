@@ -7,24 +7,25 @@
         <li><%= link_to "About", posts_path %></li>
       </ul>
     </nav>
-    <img src="/images/menu.svg" class= "menu-icon" onclick="togglemenu()">
+    <img src="https://raw.githubusercontent.com/samdungedup/blog/07d5d3eeaeee0d336efd73ec48495c919d67bcdf/app/assets/images/menu.svg" onclick="toggleMenu()" class= "menu-icon">
   </div>
 </div>
+
 <script>
 
-  var menuList = document.getElementbyId("menuList");
+  var menuList = document.getElementById("menuList");
 
   menuList.style.maxHeight = "0px";
 
-  function togglemenu(){
+  function toggleMenu(){
 
     if(menuList.style.maxHeight == "0px")
       {
-        menuList.style.maxHeight = "130px"
+        menuList.style.maxHeight = "130px";
       }
     else
       {
-        menuList.style.maxHeight = "0px"
+        menuList.style.maxHeight = "0px";
       }
   }
 

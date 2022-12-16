@@ -2,13 +2,15 @@
   width: 100%;
   display: flex;
   align-items: center;
+  box-sizing: inherit;
   border-bottom: 1px solid #333333;
+  box-sizing: border-box;
 }
 
 .logo{
-  width: 120px;
+  width: 150px;
   cursor: pointer;
-  margin: 30px 0;
+  margin: 25px 0;
 }
 
 .menu-icon{
@@ -20,12 +22,14 @@
 nav{
   flex: 1;
   text-align: right;
+  margin-bottom: 15px;
 }
 
 nav ul li{
   list-style: none;
   display:inline-block;
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 nav ul li a{
@@ -39,19 +43,25 @@ nav ul li a{
   nav ul{
     width: 100%;
     position: absolute;
-    top: 75px;
+    top: 80px;
     right: 0;
+    left: 25px;
     z-index: 2;
   }
 
   nav ul li{
     display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .menu-icon{
     display: block
+  }
+
+  #menuList{
+    overflow: hidden;
+    transition: 0.5s;
   }
 
 }
