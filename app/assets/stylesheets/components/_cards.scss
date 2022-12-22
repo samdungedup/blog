@@ -7,6 +7,17 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.btn-container{
+  position: relative;
+}
+.child{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
 figure {
   margin-bottom: 1.8em;
   display: flex;
