@@ -1,36 +1,6 @@
-.images{
-display: flex;
-flex-wrap: wrap;
-align-items: flex-start;
-flex-direction: row;
-}
-
-.walk-img{
-  width: 350px;
-  height: 600px;
-  margin-top: 15px;
-}
-
-.photography-img{
-  width: 100vh;
-  height: 200px;
-  margin-top: 15px;
-}
-
-.coding-img{
-  width: 300px;
-  height: 230px;
-  margin-top: 100px;
-}
-
-.music-img{
-  width: 450px;
-  height: 230px;
-}
-
 .wrapper {
   margin: 5em auto 0 auto;
-  max-width: 100vh;
+  max-width: 1000px;
 }
 
 img {
