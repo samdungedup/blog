@@ -1,30 +1,22 @@
-<section class="skills-cards">
+<section-cards>
   <div class="container">
-    <h1>My Interests</h1>
-      <div class="cards">
-        <div class="row">
-          <div class="col-12 col-lg-4">
-              <div class="card music mt-3 music-card h-100">
-                <%= image_tag "music.jpg" %>
-                <h2>Music</h3>
-                  <p>Guitar and a little bit music production</p>
-              </div>
-            </div>
-          <div class="col-12 col-lg-4">
-            <div class="card web  mt-3 web-card h-100">
-              <%= image_tag "web.jpg", class: "h100" %>
-              <h2>Coding</h3>
-                <p>Full stack web development</p>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4">
-            <div class="card photography mt-3 photography-card h-100">
-              <%= image_tag "photography.jpg" %>
-              <h2>Photography</h3>
-                <p>I take some pictures of the places I visit</p>
-            </div>
-          </div>
-        </div>
+    <div class="images">
+      <div class="long-travel">
+        <%= image_tag "walk.jpg", class: "walk-img" %>
+        <h2>Travel</h2>
       </div>
+      <div class="wide-photography">
+        <%= image_tag "photography.jpg", class: "photography-img" %>
+        <h2>photography</h2>
+      </div>
+      <div class="coding">
+        <%= image_tag "web.jpg", class: "coding-img" %>
+        <h2>Coding</h2>
+      </div>
+      <div class="music">
+        <%= image_tag "music.jpg", class: "music-img" %>
+        <h2>music</h2>
+      </div>
+    </div>
   </div>
-</section>
+</section-cards>

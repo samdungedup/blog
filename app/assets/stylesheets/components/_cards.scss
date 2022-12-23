@@ -1,29 +1,28 @@
-.music-card{
-  border-radius: 5px;
-}
-.music-card img{
-  height: 220px;
-  object-fit: cover;
-  border-radius: 4px 4px 0px 0px;
+.images{
+display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+flex-direction: row;
 }
 
-
-.web-card{
-  border-radius: 5px;
+.walk-img{
+  width: 350px;
+  height: 600px;
+  margin-top: 15px;
 }
 
-.web-card img{
-  height: 220px;
-  object-fit: cover;
-  border-radius: 4px 4px 0px 0px;
+.photography-img{
+  width: 900px;
+  height: 200px;
+  margin-top: 15px;
 }
 
-.photography-card{
-  border-radius: 5px;
+.coding-img{
+  width: 450px;
+  height: 230px;
 }
 
-.photography-card img{
-  height: 220px;
-  object-fit: cover;
-  border-radius: 4px 4px 0px 0px;
+.music-img{
+  width: 450px;
+  height: 230px;
 }
