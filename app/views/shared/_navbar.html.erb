@@ -1,6 +1,8 @@
 <div class="container">
   <div class="navbar">
-    <%= image_tag "logo.png", class: "logo" %>
+    <%= link_to root_path do %>
+      <%= image_tag "logo.png", class: "logo" %>
+    <% end %>
     <nav>
       <ul class="mt-3" id="menuList">
         <li><%= link_to "Posts", posts_path %></li>
