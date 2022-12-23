@@ -1,29 +1,52 @@
-.music-card{
-  border-radius: 5px;
-}
-.music-card img{
-  height: 220px;
-  object-fit: cover;
-  border-radius: 4px 4px 0px 0px;
+.images{
+display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+flex-direction: row;
 }
 
-
-.web-card{
-  border-radius: 5px;
+.walk-img{
+  width: 350px;
+  height: 600px;
+  margin-top: 15px;
 }
 
-.web-card img{
-  height: 220px;
-  object-fit: cover;
-  border-radius: 4px 4px 0px 0px;
+.photography-img{
+  width: 100vh;
+  height: 200px;
+  margin-top: 15px;
 }
 
-.photography-card{
-  border-radius: 5px;
+.coding-img{
+  width: 300px;
+  height: 230px;
+  margin-top: 100px;
 }
 
-.photography-card img{
-  height: 220px;
-  object-fit: cover;
-  border-radius: 4px 4px 0px 0px;
+.music-img{
+  width: 450px;
+  height: 230px;
+}
+
+.wrapper {
+  margin: 5em auto 0 auto;
+  max-width: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+figure {
+  margin-bottom: 1.8em;
+  display: flex;
+  justify-content: space-between;
+}
+.post-image:nth-last-child(n+2):nth-last-child(-n+2):first-child,
+.post-image:nth-last-child(n+2):nth-last-child(-n+2):first-child ~ .post-image {
+  flex: 0 1 48%;
+}
+.post-image:nth-last-child(n+3):nth-last-child(-n+3):first-child,
+.post-image:nth-last-child(n+3):nth-last-child(-n+3):first-child ~ .post-image {
+  flex: 0 1 31%;
 }
