@@ -2,6 +2,7 @@
   <%= simple_form_for @post do |f| %>
     <%= f.input :title, input_html: { class: 'input' }, wrapper: false, label_html: { class: 'label' } %>
     <%= f.input :content, input_html: { class: 'textarea' }, wrapper: false, label_html: { class: 'label' }  %>
+    <%= f.select :category_id, options_for_select(@categories.collect { |cat| [cat.name, cat.id]})%><br>
     <%= f.button :submit, 'Confirm', class: "btn btn-primary" %>
   <% end %>
 </div>
