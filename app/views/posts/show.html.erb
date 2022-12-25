@@ -1,6 +1,14 @@
 <div class="container">
-  <%= cl_image_tag @post.photo.key, height: 300, width: 400, crop: :fill %>
-  <h1><%= @post.title %></h1>
-    <%= @post.content %>
+  <div class="title mt-5">
+    <h1><strong><%= @post.title %></strong></h1>
+  </div>
+  <%= render "shared/line" %>
+  <div class="blog-photo mt-4 mb-4">
+    <%= cl_image_tag @post.photo.key, crop: :mfit %>
+  </div>
+  <%= render "shared/line" %>
       <%= link_to "Edit", edit_post_path(@post)  %>
+  <div class="content mt-5">
+      <%= @post.content %>
+  </div>
 </div>
