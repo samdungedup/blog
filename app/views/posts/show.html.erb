@@ -1,6 +1,10 @@
 <div class="container">
-  <%= cl_image_tag @post.photo.key, height: 300, width: 400, crop: :fill %>
-  <h1><%= @post.title %></h1>
-    <%= @post.content %>
-      <%= link_to "Edit", edit_post_path(@post)  %>
+  <div class="blog-photo mt-5">
+    <%= cl_image_tag @post.photo.key, crop: :scale %>
+  </div>
+  <div class="content">
+    <h1><%= @post.title %></h1>
+      <%= @post.content %>
+        <%= link_to "Edit", edit_post_path(@post)  %>
+  </div>
 </div>
