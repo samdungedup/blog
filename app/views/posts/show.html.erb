@@ -7,6 +7,7 @@
     <%= cl_image_tag @post.photo.key, crop: :mfit %>
   </div>
   <%= render "shared/line" %>
+      <%= @post.category.name %>
       <%= link_to "Edit", edit_post_path(@post)  %>
   <div class="content mt-5">
       <p><%= @post.content %></p>

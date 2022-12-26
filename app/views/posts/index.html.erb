@@ -6,6 +6,9 @@
           <% @posts.each_with_index do |post, key| %>
             <div class="card col-sm-6 col-lg-3 p-0 m-3">
               <%= cl_image_tag post.photo.key, class: "card-imgs" %>
+              <div class="category-section">
+                <h4><%= post.category.name %></h4>
+              </div>
               <%= link_to post_path(post) do %>
                 <h5 class="card-title ms-3 mt-3"><%= post.title %></h5>
               <% end %>
@@ -14,6 +17,6 @@
               </p>
             </div>
             <% end %>
-          </div>
+        </div>
     </div>
 </div>
