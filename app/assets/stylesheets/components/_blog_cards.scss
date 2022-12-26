@@ -9,8 +9,12 @@
 }
 
 .cards-space{
-  display: flex;
-  justify-content: space-between;
+  grid-template-columns: 100px 50px 100px;
+  grid-template-rows: 80px auto 80px;
+  column-gap: 100px;
+  row-gap: 25px;
+  margin-left: 30px;
+  margin-top: 20px;
 }
 
 .category-section{
@@ -22,4 +26,11 @@
       margin-right: 10px;
       margin-top: 5px;
     }
+}
+
+@media only screen and (max-width:700px){
+  .cards-space{
+    margin-left: 0;
+    margin-right: 10px;
+  }
 }
