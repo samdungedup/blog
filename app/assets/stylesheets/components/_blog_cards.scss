@@ -4,7 +4,6 @@
 }
 
 .card-title{
-  text-decoration: none !important;
   color: black;
 }
 
@@ -23,3 +22,9 @@
       margin-top: 5px;
     }
 }
+
+.card-underline{
+  a{
+    text-decoration: none;
+  }
+  }
