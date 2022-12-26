@@ -4,7 +4,7 @@
       <div class="cards">
         <div class="row cards-space">
           <% @posts.each_with_index do |post, key| %>
-            <div class="card col-sm-12 col-lg-3 p-0 m-3">
+            <div class="card col-sm-12 col-lg-3 p-0">
               <%= cl_image_tag post.photo.key, class: "card-imgs" %>
               <div class="category-section">
                 <h4><%= post.category.name %></h4>
